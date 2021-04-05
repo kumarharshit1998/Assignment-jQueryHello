@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<html>
+   <head>
+      <title>Harshit </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      .A{
+          color: aqua;
+          font-weight: bold;
+         
+          
+      }
+       </style>
+   <script type="text/javascript"> 
+      $(document).ready(function(){
+       alert('Hello');
+       });
+       $(document).ready(function () {
+        $("#btnAdd").click(function () {
+
+          
+            var x = parseInt($("#number1").val());
+          
+            var y = parseInt($("#number2").val());
+            $("#result").val(x + y);
+           $("#div1").fadeIn();
+           
+           
+        });
+            $("#btnSub").click(function () {
+
+
+                var x = parseInt($("#number1").val());
+
+                var y = parseInt($("#number2").val());
+                $("#result").val(x - y);
+                $("#div1").fadeIn();
+            });
+            $("#btnMul").click(function () {
+
+
+                var x = parseInt($("#number1").val());
+
+                var y = parseInt($("#number2").val());
+                $("#result").val(x * y);
+                $("#div1").fadeIn();
+            });
+            $("#btnDiv").click(function () {
+
+
+                var x = parseInt($("#number1").val());
+
+                var y = parseInt($("#number2").val());
+                $("#result").val(x / y);
+                $("#div1").fadeIn();
+            });
+          $("#btntext").click(function () {
+                var re= ($("#text1").val());
+                alert("Hello "+re);
+              $("#div1").fadeOut();
+            });
+            
+        });
+       $(document).ready(function(){
+       $("#number1").css('background-color','yellow');
+           $("#number2").css('background-color','yellow');
+           $("#result").css('background-color','yellow');
+            $("#number1").css('foreground-color','red');
+           $("#number1").css('color','blue');
+           $("#number2").css('color','blue');
+           $("#result").css('color','blue');
+            $("body").css("background-color", "aqua");
+           $("p").addClass('A');
+       });
+   </script>
+    </head>
+       
+    <body>
+        <div class="container p-3 my-3 bg-warning text-white">
+        <p>Jquery Assignment</br>
+        Arithmatic Operation</p>
+    </div>
+    <div class="container p-3 my-3 bg-warning text-white">
+    <form class="form-inline">
+
+        <label for="number1"></label>
+        <input type="number" id="number1" class="form-control" placeholder="Enter Number 1"  name="number1">
+
+
+
+        <label for="number2"></label>
+        <input type="number" id="number2" class="form-control" placeholder="Enter Number 2"  name="number2">
+
+
+        <label for="result">=</label>
+        <input type="number" id="result" class="form-control" placeholder="Result"  name="result">
+
+        
+            <button type="button" class="btn btn-primary" id="btnAdd"> Add </button>
+            <button type="button" class="btn btn-success" id="btnSub"> Sub </button>
+            <button type="button" class="btn btn-primary" id="btnMul"> Mul </button>
+            <button type="button" class="btn btn-success" id="btnDiv"> Div </button>
+            
+
+       
+    </form>
+        </div>
+    <div class="container p-3 my-3 bg-warning text-white">
+    <form class="form-inline">
+    
+    <label for="text"></label>
+        <input type="text" id="text1" class="form-control" placeholder="Enter the Name"  name="text1">
+
+       
+            <button type="button" class="btn btn-primary" id="btntext"> Enter </button>
+    
+        
+       
+        <div class="container" id="div1"  style="width:80px;height:80px;display:none;background-color:blue;">
+            
+        </div>
+        </form>
+    </div>
+    </body>
+    
+</html>
